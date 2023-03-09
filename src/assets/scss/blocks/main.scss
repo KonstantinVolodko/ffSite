@@ -1,0 +1,174 @@
+.main-personalization {
+    position: relative;
+    padding-top: 7.4rem;
+    padding-left: 11.1rem;
+    padding-bottom: 37.3rem;
+
+    .main-personalization__bgContainer {
+        position: absolute;
+        top: 0;
+        left: -0.67rem;
+        z-index: -1;
+        
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .main-personalization__subtitle {
+        font-weight: 400;
+        font-size: 3.8rem;
+        line-height: 130%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 38%;
+        margin-bottom: 5.3rem;
+    }
+
+    .main-personalization__title {
+        font-weight: 400;
+        font-size: 3.8rem;
+        line-height: 130%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 36%;
+
+    }
+
+    button {
+        width: 21.7rem;
+        height: 21.7rem;
+        border-radius: 50%;
+        background: #DCB99F;
+        border: none;
+        padding: 0;
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 150%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 5.5rem;
+        margin-left: 19rem;
+
+        .main-personalization__btnText {
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.main-runString {
+    display: flex;
+    padding-left: 4.9rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.4rem;
+    border-top: 0.1rem solid #B9B9B9;
+    border-bottom: 0.1rem solid #B9B9B9;
+
+    .main-runString__staticText {
+        font-weight: 400;
+        font-size: 3.8rem;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #333333;
+        width: 20%;
+    }
+
+    .main-runString__runString {
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+        width: 80%;
+
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                font-weight: 400;
+                font-size: 2.1rem;
+                line-height: 130%;
+                text-align: center;
+                color: #333333;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    }
+    
+}
+
+.main-swiperContainer {
+    position: relative;
+    border-bottom: 0.1rem solid #B9B9B9;
+    h2 {
+        font-weight: 400;
+        font-size: 3.8rem;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #333333;
+        position: absolute;
+        z-index: 111;
+        top: 5rem;
+        left: 5.1rem;
+    }
+}
+
+.main-present {
+    display: flex;
+    padding-bottom: 11.8rem;
+    padding-top: 12rem;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid #B9B9B9;
+
+    .main-present__textContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5rem;
+        h2 {
+            font-weight: 700;
+            font-size: 7.2rem;
+            line-height: 130%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #A6734D;
+        }
+
+        .main-present__subtitle {
+            font-family: 'Bodoni';
+            font-style: italic;
+            font-weight: 700;
+            font-size: 3.8rem;
+            line-height: 130%;
+            text-align: center;
+            color: #333333;
+            margin-top: 1rem;
+        }
+
+        button {
+            width: 21.7rem;
+            height: 21.7rem;
+            padding: 0;
+            border: none;
+            background: #A6734D;
+            box-shadow: 0rem 0.4rem 2rem #A6734D;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 150%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-top: 4rem;
+        }
+    }
+}

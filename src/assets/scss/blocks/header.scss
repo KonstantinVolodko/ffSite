@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 7rem 3.2rem 5.5rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+    .header-phoneIco {
+        display: flex;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 130%;
+        color: #333333;
+        gap: 1.5rem;
+        text-decoration: unset;
+        svg {
+            width: 2.1rem;
+            height: 2.1rem;
+        }
+    }
+
+    .header-logo {
+        padding-right: 12.5rem;
+        svg {
+            width: 22.2rem;
+            height: 6.3rem;
+        }
+    }
+
+    .header-whatsApp {
+        svg {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+}
