@@ -14,7 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
         autoplay: true,
     });
 
-    
+    let swiperDevelop = new Swiper(".mainDevelop", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: ".btnNext",
+            prevEl: ".btnPrev",
+          },
+      });
 
 
 

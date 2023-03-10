@@ -35,3 +35,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Bodoni";
+  src: url("../fonts/bodoniRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bodoni";
+  src: url("../fonts/bodoni-bold-italic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
