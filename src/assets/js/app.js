@@ -33,6 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  const tl2 = gsap.timeline();
+
+  tl2.to('.main-sellRunLine ul', { x: '100%', duration: 9, repeat: -1, ease: "none", })
+
 
 
 })
