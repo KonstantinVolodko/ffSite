@@ -23,12 +23,12 @@ html {
     font-size: calc(100vw / 1024 * 10);
   }
 
-  @include breakpoint($jb-bp) {
-    font-size: calc(100vw / 850 * 10);
-  }
+  // @include breakpoint($jb-bp) {
+  //   font-size: calc(100vw / 850 * 10);
+  // }
 
-  @include breakpoint($lb-bp) {
-    font-size: calc(100vw / 650 * 10);
+  @include breakpoint($sr-bp) {
+    font-size: calc(100vw / 700 * 10);
   }
 
 

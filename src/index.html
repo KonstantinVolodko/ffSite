@@ -25,20 +25,24 @@
         </div>
         <div class="main-runString__runString">
             <ul>
-                <li>пропиленгликоль</li>
-                <li>пропиленгликоль</li>
-                <li>пропиленгликоль</li>
-                <li>пропиленгликоль</li>
-                <li>пропиленгликоль</li>
-                <li>пропиленгликоль</li>
+                <li>аллергенов</li>
+                <li>SLS</li>
+                <li>PEG</li>
+                <li>DEA</li>
+                <li>фталатов</li>
+                <li>пропиленгликоля</li>
+                <li>парабенов</li>
+                <li>минеральных масел и продуктов нефтепереработки</li>
             </ul>
             <ul>
-                <li>пропиленгликоль</li>
-                <li>пропиленгликоль</li>
-                <li>пропиленгликоль</li>
-                <li>пропиленгликоль</li>
-                <li>пропиленгликоль</li>
-                <li>пропиленгликоль</li>
+                <li>аллергенов</li>
+                <li>SLS</li>
+                <li>PEG</li>
+                <li>DEA</li>
+                <li>фталатов</li>
+                <li>пропиленгликоля</li>
+                <li>парабенов</li>
+                <li>минеральных масел и продуктов нефтепереработки</li>
             </ul>
         </div>
     </section>
@@ -74,7 +78,10 @@
 
     <section class="main-develop">
         <div class="main-develop__imgContainer">
-            <img src="./assets/images/main/developBg.jpg" alt="#">
+            <picture>
+                <source media="(max-width:700px)" srcset="./assets/images/main/developBgMobile.jpg">
+                <img src="./assets/images/main/developBg.jpg">
+            </picture>
         </div>
 
         <div class="main-develop__swiperContainer">
@@ -350,31 +357,35 @@
             </h2>
 
             <div class="main-person__textContent">
-                <div class="main-person__leftContainer">
-                    <p>Уникальный состав подобран идеально машинным алгоритмом на основе вашей онлайн диагностики</p>
-                    <p>Ваше ИМЯ и ФАМИЛИЯ на этикетке</p>
-                    <p>Решает все задачи одновременно</p>
-                    <p>Не содержит аллергенов и 100% абсолютно <span>clean label</span></p>
-                    <p>Высокие дозировки активных
+                <ul class="main-person__leftContainer">
+                    <li>Уникальный состав подобран идеально машинным алгоритмом на основе вашей онлайн диагностики</li>
+                    <li>Ваше ИМЯ и ФАМИЛИЯ на этикетке</li>
+                    <li>Решает все задачи одновременно</li>
+                    <li>Не содержит аллергенов и 100% абсолютно <span>clean label</span></li>
+                    <li>Высокие дозировки активных
                         веществ эффективно справляются
-                        со сложными задачами</p>
-                    <p>Концентрированная косметика:
-                        в 2 раза меньше воды в рецептурах</p>
-                </div>
+                        со сложными задачами</li>
+                    <li>Концентрированная косметика:
+                        в 2 раза меньше воды в рецептурах</li>
+                </ul>
 
                 <div class="main-person__imgContainer">
-                    <img src="./assets/images/main/person.jpg" alt="#">
+                    <!-- <img src="./assets/images/main/person.jpg" alt="#"> -->
+                    <picture>
+                        <source media="(max-width:1024px)" srcset="./assets/images/main/bottleMob.jpg">
+                        <img src="./assets/images/main/person.jpg">
+                      </picture>
                 </div>
 
-                <div class="main-person__rightContainer">
-                    <p>Каждый ингредиент состава имеет официальные клинические исследования, подтверждающие его высокую
-                        эффективность по вашей проблеме</p>
-                    <p>Свежеприготовленное средство доставляют до вашей двери за 1-2 дня</p>
-                    <p>Деликатные отдушки</p>
-                    <p>ЭКОлогичная упаковка </p>
-                    <p>Персональные консультации Эксперта по всем вопросам 24/7</p>
-                    <p>Средства для кожи без консервантов</p>
-                </div>
+                <ul class="main-person__rightContainer">
+                    <li>Каждый ингредиент состава имеет официальные клинические исследования, подтверждающие его высокую
+                        эффективность по вашей проблеме</li>
+                    <li>Свежеприготовленное средство доставляют до вашей двери за 1-2 дня</li>
+                    <li>Деликатные отдушки</li>
+                    <li>ЭКОлогичная упаковка </li>
+                    <li>Персональные консультации Эксперта по всем вопросам 24/7</li>
+                    <li>Средства для кожи без консервантов</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -621,12 +632,62 @@
                     С 10 февраля по 10 марта
                 </h2>
 
-                <button class="brownBtn">
-                    Получить
-                    <span>промокод</span>
+                <button class="brownBtn" id="activePopap">
+                    <span>Получить</span>
+                    промокод
                 </button>
             </div>
         </div>
+
+        <div class="main-sell__popap">
+            <div class="main-sell__popapLeft">
+                <form action="#">
+                    <div class="main-sell__popapTitle">
+                        Будем рады создать для Вас
+                        персонализированную косметику
+                    </div>
+
+                    <div class="main-sell__popapSubtitle">
+                        Для получения консультации специалиста или ПРОМОКОДА для скидки оставьте
+                        Ваши контакты.
+                    </div>
+
+                    <div class="main-sell__inputContainer">
+                        <div>
+                            <label for="#">Ваше имя:</label>
+                            <input type="text" name="name">
+                        </div>
+
+                        <div>
+                            <label for="#">Телефон для связи:</label>
+                            <input type="tel" name="phone">
+                        </div>
+
+                        <div>
+                            <label for="#">Ваша почта:</label>
+                            <input type="mail" name="mail">
+                        </div>
+
+                        <button type="submit">
+                            Отправить
+                        </button>
+                    </div>
+                </form>
+
+                <div class="main-sell__popapLeft"></div>
+            </div>
+
+            <div class="main-sell__popapRight">
+                <img src="./assets/images/main/popapRight.jpg" alt="#">
+                <button id="crossIco">
+                    <svg>
+                        <use href="#cross"></use>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
     </section>
 
     <section class="main-sellRunLine">
@@ -726,6 +787,14 @@
     </section>
 
     <section class="main-questions">
+
+        <h2 class="main-questions__titleMob">
+            <span>Остались вопросы?</span>
+
+            Присоединяйтесь к нам в соцсетях для большей осведомленности
+            и получения привилегий
+        </h2>
+
         <div class="main-questions__contentContainer">
             <div class="main-questions__imgContainer">
                 <img src="./assets/images/main/woman.jpg" alt="#">
@@ -735,8 +804,8 @@
                 <h2>
                     <span>Остались вопросы?</span>
 
-                    Присоединяйтесь к нам в соцсетях для большей осведомленности 
-                        и получения привилегий
+                    Присоединяйтесь к нам в соцсетях для большей осведомленности
+                    и получения привилегий
                 </h2>
 
                 <div class="main-questions__subtitle">
@@ -757,11 +826,31 @@
                     </a>
                 </div>
 
-                <!-- <div class="main-questions__socialMedia">
+                <div class="main-questions__socialMedia">
                     <a href="#">
+                        <svg>
+                            <use href="#facebook"></use>
+                        </svg>
 
+                        Facebook
                     </a>
-                </div> -->
+
+                    <a href="#">
+                        <svg>
+                            <use href="#instagram"></use>
+                        </svg>
+
+                        Instagram
+                    </a>
+
+                    <a href="#">
+                        <svg>
+                            <use href="#vk"></use>
+                        </svg>
+
+                        VKontacte
+                    </a>
+                </div>
             </div>
         </div>
     </section>

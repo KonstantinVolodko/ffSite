@@ -3,7 +3,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 3rem 7rem 3.2rem 5.5rem;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.25);
+
+    @include breakpoint($sr-bp) {
+        flex-direction: row-reverse;
+        padding: 3rem 2rem 3.2rem 2rem;
+    }
+
 
     .header-phoneIco {
         display: flex;
@@ -13,6 +19,16 @@
         color: #333333;
         gap: 1.5rem;
         text-decoration: unset;
+        align-items: center;
+
+        .watsApp {
+            display: none;
+
+            @include breakpoint($sr-bp) {
+                display: block;
+            }
+        }
+
         svg {
             width: 2.1rem;
             height: 2.1rem;
@@ -21,6 +37,11 @@
 
     .header-logo {
         padding-right: 12.5rem;
+
+        @include breakpoint($sr-bp) {
+            padding-right: 0rem;
+        }
+
         svg {
             width: 22.2rem;
             height: 6.3rem;
@@ -28,6 +49,11 @@
     }
 
     .header-whatsApp {
+
+        @include breakpoint($sr-bp) {
+            display: none;
+        }
+
         svg {
             width: 2.4rem;
             height: 2.4rem;
