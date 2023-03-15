@@ -12,12 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
   let swiper = new Swiper(".mySwiper", {
     loop: true,
     autoplay: true,
+    grabCursor: true,
   });
 
   let swiperDevelop = new Swiper(".mainDevelop", {
     pagination: {
       el: ".swiper-pagination",
     },
+    grabCursor: true,
     loop: true,
     autoplay: true,
     navigation: {
@@ -27,17 +29,31 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   let dozeSwiper = new Swiper(".dozeSwiper", {
-    slidesPerView: 1.6,
+    slidesPerView: 1,
     spaceBetween: 20,
+    grabCursor: true,
     pagination: {
       el: ".swiper-paginationDoze",
       clickable: true,
     },
     breakpoints: {
+      500: {
+        slidesPerView: 1.6,
+      },
+
       700: {
         slidesPerView: 2.6,
       },
     }
+  });
+
+  var orderSwiper = new Swiper(".orderSwiper", {
+    pagination: {
+      el: ".swiper-paginationOrder",
+      clickable: true,
+    },
+    grabCursor: true,
+    autoplay: true,
   });
 
   const tl2 = gsap.timeline();
@@ -47,8 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let activePopap = document.querySelectorAll('#activePopap')
   let popap = document.querySelector('.main-sell__popap')
   let cross = document.querySelector('#crossIco')
+  let leftCross = document.querySelector('#crossIcoLeft')
 
-  console.log(cross)
+
 
   activePopap.forEach(e => {
     e.addEventListener('click', () => {
@@ -59,6 +76,18 @@ document.addEventListener("DOMContentLoaded", () => {
   cross.addEventListener('click', () => {
     popap.classList.remove('transitionActive')
   })
+
+  leftCross.addEventListener('click', () => {
+    popap.classList.remove('transitionActive')
+  })
+
+  let orderList = document.querySelectorAll('.main-order .swiper-pagination-bullet')
+
+  orderList.forEach((e, id) => {
+    e.innerHTML = id + 1
+  })
+
+
 
 })
 

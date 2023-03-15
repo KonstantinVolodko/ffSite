@@ -10,6 +10,10 @@
         padding: 3rem 2rem 3.2rem 2rem;
     }
 
+    @include breakpoint($sm-bp) {
+        padding: 2rem;
+    }
+
 
     .header-phoneIco {
         display: flex;
@@ -20,6 +24,10 @@
         gap: 1.5rem;
         text-decoration: unset;
         align-items: center;
+
+        @include breakpoint($sm-bp) {
+            gap: 1rem;
+        }
 
         .watsApp {
             display: none;
@@ -43,8 +51,16 @@
         }
 
         svg {
+            display: block;
             width: 22.2rem;
             height: 6.3rem;
+
+            @include breakpoint($sr-bp) {
+                width: 17.2rem;
+                height: 5.3rem;
+            }
+
+            
         }
     }
 
